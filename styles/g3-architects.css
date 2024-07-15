@@ -124,6 +124,37 @@
     margin-bottom: 30px;
   }
 
+  /* main section-3 styles */
+  .main-section3-icon{
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .icon{
+    box-sizing: border-box;
+    border: 1px solid rgb(255, 144, 14);
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    width: 240px;
+    height: 240px;
+  }
+  .icon-number{
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  .icon-name{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top:5px;
+  }
+  .main-section3-description{
+    max-width: 540px;
+  }
+
   /* responsive media query */
   @media screen and (max-width:576px) {
     .navbar,
