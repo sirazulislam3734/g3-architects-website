@@ -125,12 +125,18 @@
   }
 
   /* main section-3 styles */
+  .main-section3-description{
+    margin-bottom: 100px;
+  }
   .main-section3-icon{
     display: grid;
     text-align: center;
     grid-template-columns: repeat(4, 1fr);
   }
-  
+  .main-section3-text-title{
+    margin-top:20px;
+    margin-bottom: 10px;
+  }
   .icon{
     box-sizing: border-box;
     border: 1px solid rgb(255, 144, 14);
@@ -154,24 +160,74 @@
   .main-section3-description{
     max-width: 540px;
   }
+  .main-section4-title{
+    max-width: 545px;
+    text-align: center;
+    margin:50px auto;
+  }
+  .text-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin: none;
+  }
+  .my-company{
+    display: grid;
+    filter: grayscale(100%);
+    grid-template-columns: repeat(5, 1fr);
+  }
 
   /* responsive media query */
   @media screen and (max-width:576px) {
     .navbar,
     .nav-items,
-    .main-container{
+    .main-container,
+    .my-company{
         flex-direction: column; 
     }
-    .main-section-image{
+    .main-section-image,
+     .main-section3-icon,
+     .my-company{
       grid-template-columns: repeat(1, 1fr);
     }
     .main-section-title{
       margin: 10px 20px;
     }
+    .main-section3-icon{
+      flex-direction: column;
+    }
+    .icon{
+      margin: 10px auto;
+      width: 100%;
+      justify-content: center;
+    }
+    .my-company img{
+      width: 50%;
+      margin: 0 auto;
+    }
+    .my-company{
+      gap: 40px;
+    }
   }
 
   @media screen and (min-width:576px) and (max-width:990px) {
-    .main-container{
+    .main-container,
+    .main-section3-icon,
+    .my-company{
       flex-direction: column; 
+  }
+  .main-section3-icon,
+  .my-company{
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .icon{
+    margin: 10px auto;
+    width: 100%;
+    justify-content: center;
+  }
+  .my-company img{
+    margin: 10px auto;
+    width: 50%;
+    justify-content: center;
   }
   }
