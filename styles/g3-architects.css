@@ -126,6 +126,9 @@
 /* main section-2 styles */
 .main-section2{
   gap: 140px;
+  max-width: 1440px;
+  max-height: 1059px;
+  margin-bottom: 50px;
 }
   .main-section2-title{
     max-width: 586px;
@@ -134,30 +137,45 @@
   }
   .main-section2-text-title{
     font-size: 2.8rem;
+    margin: 0px 0px;
     font-weight: 700;
     padding-left: 15px;
-    border-left: 3px solid rgb(255, 144, 14);
+    border-left: 5px solid rgb(255, 144, 14);
   }
   .section2-title{
-    margin: 30px 0px 20px 0px;
+    margin: 0px 0px;
+    margin-bottom: 15px;
+    max-width: 586px;
+    max-height: 171px;
     padding: 30px 30px;
     border-radius: 8px;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
     background: rgb(255, 255, 255);
   }
   .section-lite-title{
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 0px 0px;
+  }
+  .section-lite-title{
     margin: none;
     margin-bottom: 10px;
   }
-  .main-section2-image img{
-    width: 100%;
+  .main-section2-image div{
+    max-width: 708px;
+    height: 982px;
   }
  .bottu {
   width: 340px;
   height: 200px;
+  margin-left: -92px;
+  margin-top: -123px;
   padding: 46px 42px;
  }
   /* main section-3 styles */
+  .main-section3{
+    margin-top: 200px;
+  }
   .main-section3-description{
     margin-bottom: 100px;
   }
@@ -208,13 +226,25 @@
     filter: grayscale(100%);
     grid-template-columns: repeat(5, 1fr);
   }
+  .footer-title{
+    max-width: 1440px;
+    text-align: center;
+    font-size: 1.4rem;
+    background: rgba(255, 144, 14, 0.1);
+    margin: 130px auto 216px auto;
+  }
+  .footer-title p{
+    padding: 37px 350px;
+    color: rgb(66, 66, 66);
+  }
 
   /* responsive media query */
   @media screen and (max-width:576px) {
     .navbar,
     .nav-items,
     .main-container,
-    .my-company{
+    .my-company,
+    .main-section2{
         flex-direction: column; 
     }
     .main-section-image,
@@ -240,12 +270,27 @@
     .my-company{
       gap: 40px;
     }
+    .main-section2-image{
+      margin-bottom: 20px;
+    }
+    .main-section2-image img{
+      width: 500px;
+    }
+    .main-section2{
+      margin-top: 0;
+      gap: 10px;
+      margin-bottom: 0;
+    }
+    .footer-title p{
+      padding: 20px 20px;
+    }
   }
 
   @media screen and (min-width:576px) and (max-width:990px) {
     .main-container,
     .main-section3-icon,
-    .my-company{
+    .my-company,
+    .main-section2{
       flex-direction: column; 
   }
   .main-section3-icon,
@@ -262,5 +307,15 @@
     margin: 10px auto;
     width: 50%;
     justify-content: center;
+  }
+  .main-section2 img{
+    width: 590px;
+  }
+  .main-section2{
+    margin: 0px 0px;
+    gap: 10px;
+  }
+  .footer-title p{
+    padding: 20px 20px;
   }
   }
